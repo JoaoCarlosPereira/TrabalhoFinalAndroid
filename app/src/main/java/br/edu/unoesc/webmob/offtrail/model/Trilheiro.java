@@ -15,7 +15,7 @@ public class Trilheiro implements Serializable {
     @DatabaseField(canBeNull = false)
     private Integer idade;
     @DatabaseField(canBeNull = false,
-            foreign = true, foreignColumnName = "cod_moto")
+            foreign = true, foreignColumnName = "codigo")
     private Moto moto;
     @DatabaseField(dataType =
             DataType.BYTE_ARRAY)
