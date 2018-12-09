@@ -1,6 +1,7 @@
 package br.edu.unoesc.webmob.offtrail.ui;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -66,8 +67,8 @@ public class PrincipalActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent itCadastrarTrilheiro = new Intent(PrincipalActivity.this, CadastroTrilheiroActivity_.class);
+                startActivity(itCadastrarTrilheiro);
             }
         });
 
